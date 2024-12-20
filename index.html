@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Shop</title>
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="product-page">
+      <div class="product-image">
+        <img id="watchImage" src="/assets/watch-purple.jpg" alt="Watch Image" />
+      </div>
+
+      <section class="product-info">
+        <h1 class="product-title">Classy Modern Smart Watch</h1>
+
+        <div class="product-review">
+          <div class="stars">
+            <img class="star" src="./assets/star-fill.svg" alt="Star" />
+            <img class="star" src="./assets/star-fill.svg" alt="Star" />
+            <img class="star" src="./assets/star-fill.svg" alt="Star" />
+            <img class="star" src="./assets/star-half-fill.svg" alt="Star" />
+            <img class="star" src="./assets/star-empty.svg" alt="Star" />
+          </div>
+          <p class="review-count">(2 Reviews)</p>
+        </div>
+
+        <div class="product-price">
+          <p class="price-original">$99.00</p>
+          <p class="price-discount">$79.00</p>
+        </div>
+
+        <p class="product-description">
+          I must explain to you how all this mistaken idea of denouncing
+          praising pain was born and I will give you a complete account of the
+          system, and expound the actual teaching.
+        </p>
+
+        <div class="product-details">
+          <div class="details-row">
+            <span class="details-label">Type</span>
+            <span class="details-value">Watch</span>
+          </div>
+          <div class="details-row">
+            <span class="details-label">Model Number</span>
+            <span class="details-value">Forerunner 290XT</span>
+          </div>
+        </div>
+
+        <div class="product-options">
+          <div class="option-group">
+            <p class="option-title">Band Color</p>
+            <div class="color-options">
+              <span class="color color-purple" data-color="purple"></span>
+              <span class="color color-cyan" data-color="cyan"></span>
+              <span class="color color-blue" data-color="blue"></span>
+              <span class="color color-gray" data-color="gray"></span>
+            </div>
+          </div>
+
+          <div class="option-group">
+            <p class="option-title">Wrist Size</p>
+            <div class="size-options">
+              <div class="size">
+                <span class="size-label">S</span>
+                <span class="size-price">$69</span>
+              </div>
+              <div class="size">
+                <span class="size-label">M</span>
+                <span class="size-price">$79</span>
+              </div>
+              <div class="size">
+                <span class="size-label">L</span>
+                <span class="size-price">$89</span>
+              </div>
+              <div class="size">
+                <span class="size-label">XL</span>
+                <span class="size-price">$99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <div class="quantity-selector">
+            <button class="quantity-decrease">-</button>
+            <input class="quantity-input" type="text" value="0" />
+            <button class="quantity-increase">+</button>
+          </div>
+
+          <button class="btn btn-add-to-cart">Add to Cart</button>
+
+          <img
+            class="icon-heart"
+            src="./assets/heart.svg"
+            alt="Wishlist Icon"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- Checkout Button -->
+    <div class="checkout-container">
+      <button class="btn btn-checkout" id="checkoutButton">
+        <span class="checkout-label">Checkout</span>
+        <span class="checkout-quantity">2</span>
+      </button>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal hidden">
+      <!-- <div class="modal-overlay"></div> -->
+      <div class="modal-content">
+        <h2 class="modal-title">Your Cart</h2>
+        <table class="modal-cart-table">
+          <thead>
+            <tr class="cart-header-row">
+              <th class="cart-header">Item</th>
+              <th class="cart-header">Color</th>
+              <th class="cart-header">Size</th>
+              <th class="cart-header">Qnt</th>
+              <th class="cart-header">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cart-row">
+              <td class="cart-item">
+                <img
+                  class="cart-image"
+                  src="/assets/watch-gray.jpg"
+                  alt="Watch Image"
+                />
+                <span>Classy Modern Smart Watch</span>
+              </td>
+              <td class="cart-color">Black</td>
+              <td class="cart-size">XL</td>
+              <td class="cart-quantity">1</td>
+              <td class="cart-price">$99.00</td>
+            </tr>
+            <tr class="cart-row">
+              <td class="cart-item">
+                <img
+                  class="cart-image"
+                  src="/assets/watch-purple.jpg"
+                  alt="Watch Image"
+                />
+                <span>Classy Modern Smart Watch</span>
+              </td>
+              <td class="cart-color">Purple</td>
+              <td class="cart-size">L</td>
+              <td class="cart-quantity">2</td>
+              <td class="cart-price">$178.00</td>
+            </tr>
+            <tr class="cart-row">
+              <td class="cart-item">
+                <img
+                  class="cart-image"
+                  src="/assets/watch-green.jpg"
+                  alt="Watch Image"
+                />
+                <span>Classy Modern Smart Watch</span>
+              </td>
+              <td class="cart-color">Cyan</td>
+              <td class="cart-size">M</td>
+              <td class="cart-quantity">1</td>
+              <td class="cart-price">$79.00</td>
+            </tr>
+            <tr class="cart-row final-row">
+              <td class="cart-item">Total</td>
+              <td class="cart-color"></td>
+              <td class="cart-size"></td>
+              <td class="cart-quantity">4</td>
+              <td class="cart-price">$356.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="modal-actions">
+          <button class="btn btn-continue-shopping">Continue Shopping</button>
+          <button class="btn btn-checkout-confirm">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
