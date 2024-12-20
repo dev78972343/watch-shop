@@ -2,7 +2,7 @@
 
 ## Live Preview
 
-[Live like preview](#)
+[Live like preview](https://watch-shop-xyz.netlify.app/)
 
 ## Project Description
 
